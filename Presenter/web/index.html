@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Presenter</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+<div id="slides">
+</div>
+
+<div id="navControls">
+  <input type="range" id="rngSlides" value="0"/>
+  <br/>
+  <input id="btnFirst" type="Button" value="First" class="navButton"/>
+  <input id="btnPrev" type="Button" value="Prev" class="navButton"/>
+  <input id="btnNext" type="Button" value="Next" class="navButton"/>
+  <input id="btnLast" type="Button" value="Last" class="navButton"/>
+</div>
+
+<div id="editor">
+  <textarea cols="50" rows="10" id="presentation">
+  </textarea>
+</div>
+
+<div id="contentControls">
+  <br/>
+   <input type="date" id="selDate" value="2000-01-01"/>
+   <input id="btnInsertDate" type="Button" value="Insert" class="navButton"/>
+   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+   <span id="timerDisplay">0</span>
+   <input id="btnTimer" type="Button" value="Start/Stop" class="navButton"/>
+   <br/>
+   <br/>
+   <input id="btnDemo" type="Button" value="Demo" class="navButton"/>
+   <input id="btnOverview" type="Button" value="Overview" class="navButton"/>
+   <input id="btnHandouts" type="Button" value="Handout" class="navButton"/>
+   <br/>
+   <br/>
+   <span class="label">Page Background</span> <input id="pckBackColor" type="color">
+</div>
+
+<div id="helpKeyboardShortcuts">
+<h1>Keyboard Shortcuts</h1>
+<table class="keyHelp">
+<tr><td>Up Arrow </td><td> First Slide</td></tr>
+<tr><td>Down Arrow</td><td>Last Slide</td></tr>
+<tr><td>Left Arrow</td><td>Previous Slide</td></tr>
+<tr><td>Right Arrow</td><td>Next Slide</td></tr>
+<tr><td>?</td><td>Show/Hide shortcut help</td></tr>
+</table>
+</div>
+
+<script type="application/dart" src="main.dart"></script>
+<script data-pub-inline src="packages/browser/dart.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+html, body {
+    width: 95%;
+    height: 125%;
+    margin: 10px;
+    padding: 0;
+    background-color:#CFD8DC;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color:white;
+    font-weight: bold;
+    font-size: xx-large;
+}
+li{
+    color:#81D4FA;
+    font-size: x-large;
+}
+
+#timer
+{
+  width:150px; 
+}
+
+#slides{
+  width: 40%;
+  height: 40%;
+  border: double;
+  border-color: #0277BD;
+  margin-left:25%;
+  padding:2%;
+  background-color:#039BE5;
+  overflow:scroll;
+}
+#rngSlides{
+  width: 76%;
+}
+
+.slide{
+  width: 40%;
+  height: 40%;
+  border: double;
+  border-color: #0277BD;
+  margin-left:25%;
+  padding:2%;
+  background-color:#039BE5;
+}
+
+.slideOverview{
+  border: double;
+  border-color: #0277BD;
+  margin-left:25%;
+  background-color:#039BE5;
+  width:240px;
+  height:160px;
+  padding:2%;
+  overflow: hidden;
+}
+  
+.slideOverview h1{
+    color:white;
+    font-weight: bold;
+    font-size: large;
+}  
+.slideOverview li{
+    color:#81D4FA;
+    font-size: medium;
+}
+
+.slideNotes{
+  background-color:white;
+  margin-left:50%;
+  transform:translate(0px, -200px);
+  position:absolute;
+  width:240px;
+  height:160px;
+  padding:2%;
+  text-decoration: underline;
+}
+
+.slideBackground
+{
+  background-color:#CFD8DC;
+}
+
+#presentation
+{
+  font-size:18px;
+}
+#editor{
+  margin-left:25%;
+  width: 0%;
+  border: black 2px;
+}
+
+#navControls{
+  margin-left:25%;
+  width: 50%;
+  border: black 2px;
+}
+
+#contentControls{
+  margin-left:25%;
+  width: 50%;
+  border: black 2px;
+}
+
+.navButton{
+   color:#08233e;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:70%;
+    padding:14px;
+    background-color:rgba(255,204,0,1);
+    border:1px solid #aa8800;
+    border-radius:10px;
+    border-bottom:1px solid #9f9f9f;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+}
+/*
+.lhsColumn
+{
+  margin-top:15px;
+  width:50%;
+  float:left;
+  display:inline-block;
+  }
+.rhsColumn
+{
+ margin-left:50%;
+ margin-top:15px;
+}*/
+.fullScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #CFD8DC;
+}
+.slideOverview:hover
+{
+  transform:scale(2, 2);
+}
+.label{
+  font-size: smaller;
+}
+#helpKeyboardShortcuts
+{
+  position:absolute;
+  width:35%;
+  top:25%;
+  margin-left:25%;
+  background-color:navy;
+  z-index: 9999;
+  padding:25px;
+  border-radius: 25px;
+  visibility:hidden;
+  box-shadow: 10px 10px 5px #888888;
+}
+.keyHelp
+{
+ color:white;
+ font-weight: bolder;
+ width:70%;
+}
